@@ -1,0 +1,15 @@
+{
+  "itemGroup.oritechsplitter": "Oritech Smart Splitter",
+
+  "block.oritechsplitter.smart_splitter": "Smart Splitter",
+
+  "tooltip.oritechsplitter.smart_splitter": "Distributes one stack between configured horizontal outputs.",
+  "tooltip.oritechsplitter.smart_splitter.configure": "Input sides are detected automatically. Right-click a side to toggle its output. Sneak-right-click to change mode.",
+
+  "message.oritechsplitter.smart_splitter.output_enabled": "%s output enabled",
+  "message.oritechsplitter.smart_splitter.output_disabled": "%s output disabled",
+  "message.oritechsplitter.smart_splitter.mode": "Smart Splitter mode: %s",
+  "message.oritechsplitter.smart_splitter.mode.strict": "Strict",
+  "message.oritechsplitter.smart_splitter.mode.overflow": "Overflow",
+  "message.oritechsplitter.smart_splitter.mode.round_robin": "Round Robin"
+}

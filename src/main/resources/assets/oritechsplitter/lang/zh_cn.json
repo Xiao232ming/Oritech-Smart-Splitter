@@ -1,0 +1,15 @@
+{
+  "itemGroup.oritechsplitter": "Oritech 智能分流器",
+
+  "block.oritechsplitter.smart_splitter": "智能分流器",
+
+  "tooltip.oritechsplitter.smart_splitter": "在已配置的水平输出面之间平均分配物品，一次只缓存一组。",
+  "tooltip.oritechsplitter.smart_splitter.configure": "输入面会自动识别。右键点击某个面可切换为输出，潜行右键可切换分配模式。",
+
+  "message.oritechsplitter.smart_splitter.output_enabled": "%s 已设为输出",
+  "message.oritechsplitter.smart_splitter.output_disabled": "%s 已取消输出",
+  "message.oritechsplitter.smart_splitter.mode": "智能分流器模式：%s",
+  "message.oritechsplitter.smart_splitter.mode.strict": "严格",
+  "message.oritechsplitter.smart_splitter.mode.overflow": "溢出",
+  "message.oritechsplitter.smart_splitter.mode.round_robin": "轮询"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "oritech:item_filter_block"
+    },
+    "p": {
+      "item": "oritech:item_pipe"
+    }
+  },
+  "pattern": [
+    " p ",
+    "pfp",
+    " p "
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritechsplitter:smart_splitter"
+  }
+}
