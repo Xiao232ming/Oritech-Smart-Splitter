@@ -1,4 +1,4 @@
-# Oritech Smart Splitter（Oritech：智能分流）
+# Oritech Smart Splitter（Oritech：智能分拣）
 
 **🌐 语言：** [English](README.md) | [简体中文](README.zh-CN.md)
 
