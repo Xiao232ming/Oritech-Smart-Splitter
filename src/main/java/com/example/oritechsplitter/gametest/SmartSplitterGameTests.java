@@ -309,6 +309,12 @@ public class SmartSplitterGameTests {
      * <p>Note that an output only counts as a recipient once it has no reservation left, so the
      * moving output has to take its own share first. If every output is stale there is nobody to
      * hand the items to and upstream deliberately does nothing.
+     *
+     * <p>The assertion polls instead of firing at a fixed tick. The staleness rule is symmetric:
+     * once south has held its reclaimed share for {@link SmartSplitterBlockEntity#OVERFLOW_DELAY}
+     * without making progress it becomes stale itself, and north - which by then holds no
+     * reservation - becomes the recipient and takes the items back. A fixed delay lands right on
+     * that hand-back and races the block entity tick, which made this test flaky.
      */
     @GameTest(template = "empty", skyAccess = true, timeoutTicks = 400)
     public static void overflowReclaimsStaleShare(GameTestHelper helper) {
@@ -324,12 +330,12 @@ public class SmartSplitterGameTests {
         helper.assertTrue(ownShare.getCount() == 4,
                 "south should take its own reserved share first, got " + ownShare.getCount());
 
-        // North never extracts, so after OVERFLOW_DELAY its 4 reserved items become available.
-        helper.runAfterDelay(SmartSplitterBlockEntity.OVERFLOW_DELAY * 2, () -> {
+        // North never extracts, so after OVERFLOW_DELAY its 4 reserved items become available to
+        // south. Poll every tick until that happens.
+        helper.succeedWhen(() -> {
             ItemStack reclaimed = side(splitter, Direction.SOUTH).extractItem(0, STACK, false);
             helper.assertTrue(reclaimed.getCount() == 4,
                     "overflow should have reclaimed north's stale share, got " + reclaimed.getCount());
-            helper.succeed();
         });
     }
 
