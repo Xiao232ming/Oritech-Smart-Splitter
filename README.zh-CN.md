@@ -2,7 +2,7 @@
 
 **🌐 语言：** [English](README.md) | [简体中文](README.zh-CN.md)
 
-> 将26.1.2的智能分流器带回了1.21.1。
+> 将26.1.2的智能分拣器带回了1.21.1。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-brightgreen.svg)]()
@@ -10,7 +10,7 @@
 
 ## 📖 简介
 
-**Oritech Smart Splitter** 是 [Oritech](https://github.com/Rearth/Oritech) 的一个附属模组，将模组2.0.0+新增的智能分流器方块带回了1.21.1版本。
+**Oritech Smart Splitter** 是 [Oritech](https://github.com/Rearth/Oritech) 的一个附属模组，将模组2.0.0+新增的智能分拣器方块带回了1.21.1版本。
 
 ## 🎮 游戏版本
 
